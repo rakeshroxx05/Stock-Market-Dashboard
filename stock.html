@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Market Dashboard</title>
+  <link rel="stylesheet" href="stock.css">
+</head>
+<body>
+
+  <header>
+    <h1>📈 Stock Market Dashboard</h1>
+    <p>Live Prices • Comparison • Market News</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Live Stock Price</h2>
+      <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g. IBM)">
+      <button onclick="getStock()">Get Price</button>
+      <p id="priceResult"></p>
+    </div>
+
+    <div class="card">
+      <h2>Compare Stocks</h2>
+      <input type="text" id="stock1" placeholder="Stock 1 (e.g. AAPL)">
+      <input type="text" id="stock2" placeholder="Stock 2 (e.g. MSFT)">
+      <button onclick="compareStocks()">Compare</button>
+      <p id="compareResult"></p>
+    </div>
+
+    <div class="card wide">
+      <h2>📰 Market News</h2>
+      <button onclick="getNews()">Load News</button>
+      <div id="news"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Stock Dashboard Project</p>
+  </footer>
+
+  <script src="stock.js"></script>
+</body>
+</html>
